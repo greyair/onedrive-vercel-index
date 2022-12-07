@@ -91,7 +91,7 @@ const Navbar = () => {
 
           <SwitchLang />
 
-          {siteConfig.links.length !== 0 &&
+          {siteConfig.show_links && siteConfig.links.length !== 0 &&
             siteConfig.links.map((l: { name: string; link: string }) => (
               <a
                 key={l.name}
